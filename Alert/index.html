@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="alert-box" id="alert">
+        <p id ="alertBox">Alert 박스</p>
+        <button onclick="convertAlertStatus('none')">닫기</button>
+    </div>
+    
+    <button onclick="convertAlertStatus('block'), convertAlertParagraph('아이디를 입력해 주세요')">열기</button>
+
+    <button onclick="convertAlertStatus('block'), convertAlertParagraph('비밀번호를 입력해 주세요')">열기</button>
+
+    <script>
+        function convertAlertStatus(status, str){
+            document.getElementById('alert').style.
+            display = status;
+        }
+
+        function convertAlertParagraph(str) {
+            document.getElementById('alertBox').innerHTML = str;
+        }
+    </script>
+    
+</body>
+</html>
