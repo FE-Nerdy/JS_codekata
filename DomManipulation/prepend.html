@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li style="display: none">Project</li>
+    </ul>
+    <script>
+        let menu = document.getElementById("menu");
+
+        let node1 = document.createElement("li");
+        node1.textContent = "Contact1";
+        let node2 = document.createElement("li");
+        node2.textContent = "Contact2";
+        
+        menu.prepend(node1, node2);
+    </script>
+</body>
+</html>
