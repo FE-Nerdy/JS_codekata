@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="inputText" value="Hello World"
+        style="background-color: lightblue; color: darkblue; font-size: 20px;">
+
+    <script>
+        let inputBox = document.getElementById("inputText");
+        inputBox.style.padding = "10px";
+        console.log(inputBox.style);
+        
+        //css가 오버라이드 되지 않는다.
+        inputBox.style.cssText += "width: 200px; height: 50px;";
+
+        //css가 오버라이드가 된다
+        inputBox.style.cssText = "font-size: 25px;";
+    </script>
+</body>
+
+</html>
