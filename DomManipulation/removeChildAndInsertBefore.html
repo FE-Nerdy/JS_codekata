@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+    </ul>
+    <script>
+        let menu = document.getElementById("menu");
+
+        menu.removeChild(menu.firstElementChild);
+
+        //insertBefore는 첫번째 인자를 두번째 인자 앞에 삽입
+        menu.insertBefore(
+            document.createElement("li"), 
+            menu.children[1]
+        ); 
+    </script>
+</body>
+
+</html>
