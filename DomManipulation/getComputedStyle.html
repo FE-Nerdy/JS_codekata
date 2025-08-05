@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            background-color: lightblue;
+            color: darkblue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="inputText" value="Hello World">
+
+    <script>
+        let inputBox = document.getElementById("inputText");
+        console.log(window.getComputedStyle(inputBox).backgroundColor);
+    </script>
+</body>
+
+</html>
